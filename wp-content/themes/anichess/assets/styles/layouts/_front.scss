@@ -1,6 +1,6 @@
 .front {
   position: relative;
-  padding: 100px 0;
+  padding: 120px 0 100px;
 
   img {
     position: absolute;
@@ -11,5 +11,36 @@
 
   &-wrap {
     height: 100vh;
+  }
+
+  &-social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    li {
+      padding: 0;
+      margin: 0 10px;
+
+      a {
+        display: block;
+        font-size: 0;
+        width: 40px;
+
+        img {
+          transition: 0.3s;
+          filter: brightness(0) invert(1);
+        }
+
+        &:hover {
+
+          img {
+            filter: brightness(1) invert(0);
+          }
+        }
+      }
+    }
   }
 }

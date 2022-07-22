@@ -22,6 +22,13 @@ h1, .h1 {
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 80px;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 50px;
+  }
 }
 
 h2, .h2 {

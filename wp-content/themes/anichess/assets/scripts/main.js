@@ -22,6 +22,10 @@
       },
       finalize: function () {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
+        AOS.init({
+          once: true,
+        });
       }
     },
     // Home page
