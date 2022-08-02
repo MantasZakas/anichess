@@ -5,8 +5,8 @@
         <div class="front-banner">
           <div class="front-banner__inner init"
                id="frontBanner"
-               style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('image'),'full') ?>')">
-            <?php echo wp_get_attachment_image(get_field('background'),'full') ?>
+               style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('image'),'square') ?>')">
+            <?php echo wp_get_attachment_image(get_field('background'),'square') ?>
             <a href="#register" class="d-none d-md-block">
               <?php get_template_part('components/mouse') ?>
             </a>
@@ -30,7 +30,7 @@
           <div id="frontContent">
             <div class="front-content wow fadeIn fadeDelay-04">
               <h1>
-                A <span class="typewriter-wrap typewriter-wrap--1"><b id="typewriter1">Challenge</b></span> Inspired By The #1 Chess Grandmaster
+                <span class="typewriter-wrap typewriter-wrap--1"><b id="typewriter1">A Thrilling Challenge</b></span> Inspired By <span class="typewriter-wrap typewriter-wrap--2"><b id="typewriter2">Super Grandmasters</b></span>
               </h1>
               <?php the_field('content'); ?>
             </div>

@@ -70,7 +70,11 @@
         //tiny typewriter
 
         tinyTypewriter(document.querySelector("#typewriter1"), {
-          items: ['Challenge', 'Game']
+          items: ['A Thrilling Challenge', 'A Magical Game', 'A Remarkable World', 'A Mystical Strategy']
+        });
+
+        tinyTypewriter(document.querySelector("#typewriter2"), {
+          items: ['Super Grandmasters', 'Ambitious Dreamers', 'Casual Gamers', 'You'],
         });
       }
     },
