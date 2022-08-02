@@ -63,4 +63,71 @@
       }
     }
   }
+
+  &-form {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 16px 0;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    min-width: 380px;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+      min-width: unset;
+    }
+
+    &:before {
+      @extend .pseudo;
+      background: linear-gradient(90deg, #00AEFA, #00FFFB, #00AEFA);
+      width: 200%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      &:before {
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  &-social {
+    border: 1px solid rgba(white, 0.4);
+    cursor: pointer;
+    background-color: transparent;
+    color: rgba(white, 0.4);
+    border-radius: 16px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    min-width: 180px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    transition: 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+      border-color: white;
+    }
+  }
 }

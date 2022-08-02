@@ -23,8 +23,43 @@
       finalize: function () {
         // JavaScript to be fired on all pages, after page specific JS is fired
 
-        AOS.init({
-          once: true,
+        //fullpage
+        if ($('.page-wrap .section').length  && $(window).width() > 992) {
+          var totalFullPageSlides = document.querySelectorAll('.section').length;
+          $('.page-wrap').fullpage({
+            navigation: false,
+            autoScrolling: true,
+            fitToSection: false,
+            animateAnchor: false,
+            scrollBar: true,
+            bigSectionsDestination: 'top',
+            anchors: ['home', 'register'],
+          });
+        }
+
+        //wow
+        new WOW({
+          boxClass: 'wow',
+          animateClass: 'animated',
+          offset: 100,
+          live: true
+        }).init();
+
+        //cf7
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+          $('#frontContent').addClass('d-none');
+          $('#successContent').removeClass('d-none');
+        }, false );
+
+        $(document).ready(function () {
+
+          setTimeout(function () {
+            $('#pageWrap').removeClass('init');
+          }, 100);
+
+          setTimeout(function () {
+            $('#frontBanner').removeClass('init');
+          }, 800);
         });
       }
     },

@@ -1,0 +1,17 @@
+#mouseIcon {
+
+  &:hover {
+
+    #mouseArrow {
+      animation: mouseArrowAnimation 2s linear infinite;
+    }
+  }
+}
+
+
+
+@keyframes mouseArrowAnimation {
+  0% {transform: translateY(0)}
+  15% {transform: translateY(5px)}
+  50% {transform: translateY(0)}
+}

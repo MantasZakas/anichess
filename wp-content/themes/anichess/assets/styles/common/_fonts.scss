@@ -1,6 +1,20 @@
 @font-face {
-  font-family: "Oakle";
-  src: url("../fonts/Oakle.ttf") format("truetype");
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
+}
+
+//@font-face {
+//  font-family: "TT Firs Neue";
+//  src: url("../fonts/TTFirsNeue-Light.ttf") format("truetype");
+//  font-style: normal;
+//  font-weight: 400;
+//}
+
+@font-face {
+  font-family: "TT Firs Neue";
+  src: url("../fonts/TTFirsNeue-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
 }

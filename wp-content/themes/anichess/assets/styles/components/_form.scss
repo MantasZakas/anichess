@@ -1,10 +1,11 @@
 .contact-form {
+  margin-bottom: 60px;
 
   &__inner {
     display: flex;
     align-items: center;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       flex-direction: column;
     }
   }
@@ -19,32 +20,22 @@
 
   label {
     margin-bottom: 0;
-    position: relative;
+    margin-right: -20px;
+    flex-grow: 1;
 
-    @include media-breakpoint-down(sm) {
-      margin-bottom: 20px;
-    }
-
-    &:after {
-      @extend .pseudo;
-      width: 40px;
-      height: 2px;
-      background-color: white;
-      bottom: -2px;
-      left: 0;
-      clip-path: polygon(0 0, 100% 0%, calc(100% - 2px) 100%, 0% 100%);
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      margin-right: 0;
+      width: 100%;
     }
 
     input {
-      border: none;
-      width: 100%;
-      padding: 15px 20px;
-      border-bottom: 1px solid rgba(white, 0.4);
+      border: 1px solid rgba(white, 0.4);
+      border-radius: 16px 0;
+      height: 60px;
       background-color: transparent;
-      color: white;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
+      padding: 10px 40px 10px 20px;
+      width: 100%;
 
      & ::placeholder {
         color: rgba(white, 0.4);
@@ -58,6 +49,16 @@
       &::-ms-input-placeholder {
         color: rgba(white, 0.4);
       }
+
+      @include media-breakpoint-down(sm) {
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  button {
+    @include media-breakpoint-down(md) {
+      width: 100%;
     }
   }
 

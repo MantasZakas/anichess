@@ -15,15 +15,19 @@ use Roots\Sage\Wrapper;
 </div>
 <![endif]-->
 
-<div id="pageWrap" class="page-wrap" style="overflow: hidden">
+
   <?php get_fields();
   do_action('get_header');
   get_template_part('components/header');
-  include Wrapper\template_path(); ?>
-</div>
-<?php
+  ?>
+  <div id="pageWrap" class="page-wrap init <?php echo is_front_page() ? 'page-wrap--front' : '' ?>">
+    <?php include Wrapper\template_path(); ?>
+  </div>
+  <?php
 do_action('get_footer');
-get_template_part('components/footer');
+if (!is_front_page()) {
+  get_template_part('components/footer');
+}
 wp_footer();
 ?>
 </body>

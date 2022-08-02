@@ -1,15 +1,19 @@
 html, body {
   height: 100%;
+
+  @include media-breakpoint-down(md) {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
   //-webkit-font-smoothing: antialiased;
   //-moz-osx-font-smoothing: grayscale;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'TT Firs Neue', sans-serif;
   display: flex;
   flex-direction: column;
   color: white;
-  background-color: $black;
+  background-color: $main;
   overflow-x: hidden;
   font-weight: 400;
   font-size: 18px;
@@ -17,17 +21,15 @@ body {
 }
 
 h1, .h1 {
-  font-family: 'Oakle', sans-serif;
   font-weight: 400;
   font-size: 48px;
   line-height: 60px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   text-align: center;
 
   @include media-breakpoint-down(sm) {
     font-size: 40px;
     line-height: 46px;
-    margin-bottom: 50px;
   }
 }
 
