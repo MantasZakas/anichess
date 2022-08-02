@@ -1,8 +1,8 @@
-#mouseIcon {
+.mouse-icon {
 
   &:hover {
 
-    #mouseArrow {
+    .mouse-arrow {
       animation: mouseArrowAnimation 2s linear infinite;
     }
   }

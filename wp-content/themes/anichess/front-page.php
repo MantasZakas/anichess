@@ -7,7 +7,10 @@
                id="frontBanner"
                style="background-image: url('<?php echo wp_get_attachment_image_url(get_field('image'),'full') ?>')">
             <?php echo wp_get_attachment_image(get_field('background'),'full') ?>
-            <a href="#register">
+            <a href="#register" class="d-none d-md-block">
+              <?php get_template_part('components/mouse') ?>
+            </a>
+            <a href="#registerMobile" class="d-md-none">
               <?php get_template_part('components/mouse') ?>
             </a>
           </div>
@@ -18,7 +21,7 @@
 </div>
 
 <div class="section" data-anchor="register">
-  <div id="register" class="d-lg-none"></div>
+  <div id="registerMobile" class="d-lg-none"></div>
   <div class="container h-100">
     <div class="front-section">
       <div></div>
