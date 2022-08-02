@@ -29,6 +29,9 @@
         <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
           <div id="frontContent">
             <div class="front-content wow fadeIn fadeDelay-04">
+              <h1>
+                A <span class="typewriter-wrap typewriter-wrap--1"><b id="typewriter1">Challenge</b></span> Inspired By The #1 Chess Grandmaster
+              </h1>
               <?php the_field('content'); ?>
             </div>
             <div class="contact-form wow fadeIn fadeDelay-08">

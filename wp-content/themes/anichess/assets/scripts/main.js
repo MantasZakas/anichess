@@ -66,6 +66,12 @@
             $('#frontBanner').removeClass('init');
           }, 800);
         });
+
+        //tiny typewriter
+
+        tinyTypewriter(document.querySelector("#typewriter1"), {
+          items: ['Challenge', 'Game']
+        });
       }
     },
     // Home page

@@ -23,6 +23,6 @@
 
     gtag('config', 'G-TRRXYB89V5');
   </script>
-
+  <script src="<?php echo get_template_directory_uri() ?>/assets/scripts/typewriter.js"></script>
   <?php wp_head(); ?>
 </head>

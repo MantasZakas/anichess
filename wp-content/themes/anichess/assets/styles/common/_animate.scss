@@ -52,3 +52,20 @@
     animation-delay: 1.6s;
   }
 }
+
+.typewriter {
+
+  &-wrap {
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+
+    &--1 {
+      min-width: 325px;
+
+      @include media-breakpoint-down(sm) {
+        min-width: 202px;
+      }
+    }
+  }
+}
