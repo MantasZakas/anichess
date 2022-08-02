@@ -49,6 +49,11 @@
         document.addEventListener( 'wpcf7mailsent', function( event ) {
           $('#frontContent').addClass('d-none');
           $('#successContent').removeClass('d-none');
+          if(window.innerWidth < 992) {
+            $([document.documentElement, document.body]).animate({
+              scrollTop: $("#registerMobile").offset().top
+            }, 500);
+          }
         }, false );
 
         $(document).ready(function () {

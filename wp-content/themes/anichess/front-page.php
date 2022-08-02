@@ -28,10 +28,10 @@
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
           <div id="frontContent">
-            <div class="front-content">
+            <div class="front-content wow fadeIn fadeDelay-04">
               <?php the_field('content'); ?>
             </div>
-            <div class="contact-form">
+            <div class="contact-form wow fadeIn fadeDelay-08">
               <?php echo do_shortcode(get_field('form_code')) ?>
             </div>
           </div>
