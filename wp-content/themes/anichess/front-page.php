@@ -10,9 +10,6 @@
             <a href="#register" class="d-none d-md-block">
               <?php get_template_part('components/mouse') ?>
             </a>
-            <a href="#registerMobile" class="d-md-none">
-              <?php get_template_part('components/mouse') ?>
-            </a>
           </div>
         </div>
       </div>
@@ -21,7 +18,6 @@
 </div>
 
 <div class="section" data-anchor="register">
-  <div id="registerMobile" class="d-lg-none"></div>
   <div class="container h-100">
     <div class="front-section">
       <div></div>
