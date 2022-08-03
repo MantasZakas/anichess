@@ -65,11 +65,16 @@
         //tiny typewriter
 
         tinyTypewriter(document.querySelector("#typewriter1"), {
-          items: ['A Thrilling Challenge', 'A Magical Game', 'A Remarkable World', 'A Mystical Strategy']
+          items: ['A Thrilling Challenge', 'A Magical Game', 'A Remarkable World', 'A Mystical Strategy'],
+          delayBetweenItems: 4000,
+          typeSpeed: 75,
         });
 
         tinyTypewriter(document.querySelector("#typewriter2"), {
           items: ['Super Grandmasters', 'Ambitious Dreamers', 'Casual Gamers', 'You'],
+          typeSpeed: 75,
+          // deleteSpeed: 50,
+          delayBetweenItems: 5000,
         });
       }
     },

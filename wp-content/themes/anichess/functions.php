@@ -51,7 +51,7 @@ add_filter('login_headerurl', 'my_login_logo_url');
 //custom image sizes
 add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 function wpdocs_theme_setup() {
-  add_image_size( 'square', 800, 800, true );
+  add_image_size( 'square', 1600, 1600, true );
 }
 
 //acf settings pages

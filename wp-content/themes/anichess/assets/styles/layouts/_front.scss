@@ -18,6 +18,7 @@
       @extend .bg-contain;
       position: relative;
       max-height: 100vh;
+      max-width: 800px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -36,7 +37,7 @@
         position: absolute;
         width: 24px;
         left: calc(50% - 12px);
-        bottom: 80px;
+        bottom: 40px;
         z-index: 2;
 
         @include media-breakpoint-down(sm) {
