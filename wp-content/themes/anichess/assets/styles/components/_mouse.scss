@@ -1,9 +1,27 @@
-.mouse-icon {
+.mouse {
 
-  &:hover {
+  display: block;
+  position: absolute;
+  width: 24px;
+  left: calc(50% - 12px);
+  bottom: 40px;
+  z-index: 2;
 
-    .mouse-arrow {
-      animation: mouseArrowAnimation 2s linear infinite;
+  @include media-breakpoint-down(sm) {
+    bottom: 0;
+  }
+
+  &--video {
+    bottom: 60px;
+  }
+
+  &-icon {
+
+    &:hover {
+
+      .mouse-arrow {
+        animation: mouseArrowAnimation 2s linear infinite;
+      }
     }
   }
 }

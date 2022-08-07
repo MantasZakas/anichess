@@ -14,7 +14,7 @@ body {
   //flex-direction: column;
   color: white;
   background-color: $main;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;

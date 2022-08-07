@@ -14,6 +14,34 @@
     justify-content: center;
     align-items: center;
 
+    &__outer {
+      position: relative;
+
+      @include media-breakpoint-down(md) {
+        overflow-x: hidden;
+        overflow-y: visible;
+      }
+
+      video {
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: top center;
+        @extend .bg-contain;
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+          //object-fit: unset;
+          object-position: unset;
+          min-width: 140%;
+          max-width: 140%;
+          transform: translateX(-15%);
+        }
+      }
+    }
+
     &__inner {
       @extend .bg-contain;
       position: relative;
@@ -30,19 +58,6 @@
         z-index: -1;
         max-height: 100%;
         max-width: 100vh;
-      }
-
-      a {
-        display: block;
-        position: absolute;
-        width: 24px;
-        left: calc(50% - 12px);
-        bottom: 40px;
-        z-index: 2;
-
-        @include media-breakpoint-down(sm) {
-          bottom: 0;
-        }
       }
 
       svg {
@@ -76,6 +91,24 @@
       @media (max-width: 430px) {
         font-size: 26px;
         line-height: 32px;
+      }
+    }
+
+    &__wrap {
+      position: relative;
+
+      &:before {
+        @extend .pseudo;
+        z-index: -1;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background-image: linear-gradient(180deg, black, $main);
+
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
       }
     }
   }

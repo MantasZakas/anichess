@@ -60,6 +60,13 @@
           setTimeout(function () {
             $('#frontBanner').removeClass('init');
           }, 800);
+
+          document.querySelector('video').play();
+
+          $('video').on('videoEnd', function() {
+            $(this).play();
+          });
+
         });
 
         //tiny typewriter
