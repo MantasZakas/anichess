@@ -17,6 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
 
     a {
       font-size: 0;
@@ -32,6 +37,37 @@
 
       &:last-child {
         display: none;
+      }
+    }
+
+    &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include media-breakpoint-down(sm) {
+        position: relative;
+        right: unset;
+        top: unset;
+        transform: none;
+        margin-top: 20px;
+      }
+
+      a {
+        font-size: 0;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        transition: 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.6;
+        }
       }
     }
   }

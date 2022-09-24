@@ -45,9 +45,19 @@
           live: true
         }).init();
 
+        $('#formSubmit').on('click',function() {
+          $(this).addClass('button--disabled');
+        });
+
+        //cf7
+        document.addEventListener( 'wpcf7submit ', function( event ) {
+          $('#formSubmit').removeClass('button--disabled');
+        }, false );
+
         //cf7
         document.addEventListener( 'wpcf7mailsent', function( event ) {
           $('#frontContent').addClass('d-none');
+          $('#footerSocial').addClass('d-none');
           $('#successContent').removeClass('d-none');
         }, false );
 

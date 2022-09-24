@@ -96,20 +96,6 @@
 
     &__wrap {
       position: relative;
-
-      &:before {
-        @extend .pseudo;
-        z-index: -1;
-        top: -10px;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        background-image: linear-gradient(180deg, black, $main);
-
-        @include media-breakpoint-up(lg) {
-          display: none;
-        }
-      }
     }
   }
 
